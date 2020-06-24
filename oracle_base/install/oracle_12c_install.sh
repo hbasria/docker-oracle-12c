@@ -17,8 +17,8 @@ groupadd dba && useradd -m -G dba oracle
 mkdir /u01 && chown oracle:dba /u01 && chmod 775 /u01
 
 #Download oracle database zip
-echo "Downloading oracle database zip"
-wget -q -O /oracle_database.zip "$ORACLE_DATABASE_DOWNLOAD_URL"
+#echo "Downloading oracle database zip"
+#wget -q -O /oracle_database.zip "$ORACLE_DATABASE_DOWNLOAD_URL"
 
 echo "Extracting oracle database zip"
 su oracle -c 'unzip -q /oracle_database.zip -d /home/oracle/'
